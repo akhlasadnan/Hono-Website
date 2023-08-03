@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #24262b;
+}
+
+ul{ 
+    list-style-type: none;
+}
+
+header{
+    background-color: #fef5ef;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+.header-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hono_logo{
+    width: 100px;
+}
+
+.hono_logo img{
+    width: 100%;
+    display: block;
+}
+
+.main-menu > ul > li, .active-links ul li{
+    display: inline-block;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.main-menu > ul > li a{
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.main-menu > ul > li a:hover{
+    color: #b19361;
+}
+
+.active-links ul li a{
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.active-links ul li span{
+    background-color: #b19361;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 15px;
+    position: absolute;
+    top: 16px;
+    left: 14px;
+}
+
+.active-links ul li:last-of-type a{
+    background-color: #f2e8e780;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.hero-section{
+    background-image: url('./images/hero-slider-1.jpg');
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-slider{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.content p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 0 5px;
+}
+
+.content h2{
+    font-size: 6.2rem;
+    line-height: 65px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.content a{
+    padding: 20px 30px;
+    border: 1px solid #24262b;
+    margin: 50px 0 0;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.content a:hover{
+    border-color: #b19361;
+    color: #b19361;
+}
+
+ul.sub-menu {
+    background-color: #fff;
+    min-width: 200px;
+    position: absolute;
+    padding: 25px 30px;
+    top: 100%;
+    left: 0;
+    transform: perspective(500px) rotateX(-90deg);
+    transform-origin: top left;
+    transition: 0.5s;
+}
+
+.main-menu ul li:hover ul.sub-menu{
+    transform: perspective(900px) rotateX(0deg);
+}
+
+ul.sub-menu li a{
+    transition: 0.5s;
+    display: block;
+    font-weight: 100;
+}
+
+ul.sub-menu li a:hover{
+    transform: translateX(10px);
+    color: #b19361;
+}
+
+ul.sub-menu > li{
+    padding: 10px 0;
+}
