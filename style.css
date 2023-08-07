@@ -28,6 +28,11 @@ p{
     font-size: 1.4rem;
 }
 
+.container{
+    width: 80%;
+    margin: auto;
+}
+
 .header-container{
     width: 80%;
     margin: auto;
@@ -106,20 +111,20 @@ p{
     align-items: center;
 }
 
-.content p{
+.header-content p{
     text-transform: uppercase;
     font-size: 2rem;
     margin: 0 0 5px;
 }
 
-.content h2{
+.header-content h2{
     font-size: 6.2rem;
     line-height: 65px;
     font-weight: 600;
     margin: 0 0 5px;
 }
 
-.content a{
+.header-content a{
     padding: 20px 30px;
     border: 1px solid #24262b;
     margin: 50px 0 0;
@@ -130,7 +135,7 @@ p{
     transition: 0.5s;
 }
 
-.content a:hover{
+.header-content a:hover{
     border-color: #b19361;
     color: #b19361;
 }
@@ -164,4 +169,43 @@ ul.sub-menu li a:hover{
 
 ul.sub-menu > li{
     padding: 10px 0;
+}
+
+.sevices-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services-box{
+    flex-basis: 22%;
+    padding:10px;
+    text-align: center;
+}
+
+.image{
+    width: 77px;
+    margin: auto;
+}
+
+.image img{
+    
+    display: block;
+    width: 100%;
+}
+
+.services-content h2 {
+    font-size: 1.6rem;
+    line-height: normal;
+    margin: 27px 0 15px;
+}
+
+.services-content p {
+    font-size: 1.4rem;
+    color: #777;
 }
