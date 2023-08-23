@@ -257,11 +257,12 @@ ul.sub-menu > li {
     letter-spacing: 2px;
 }
 
-.image-box-1 a {
+a.dis-btn {
     padding: 15px 30px;
     border: 1px solid black;
     border-radius: 5px;
     display: inline-block;
+    font-size: 1.4rem;
 }
 
 .image-box-2, .image-box-1 {
@@ -280,7 +281,7 @@ ul.sub-menu > li {
     gap: 20px;
 }
 
-.img-box-item::after {
+.banner-two-box::after, .img-box-item::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -292,13 +293,13 @@ ul.sub-menu > li {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.img-box-item:hover::after {
+.banner-two-box:hover::after, .img-box-item:hover::after {
     transition: all 1s ease 0s;
     opacity: 0;
     height: 100%;
 }
 
-.img-box-item::before {
+.banner-two-box::before, .img-box-item::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -310,7 +311,7 @@ ul.sub-menu > li {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.img-box-item:hover::before {
+.banner-two-box:hover::before, .img-box-item:hover::before {
     transition: all 1s ease 0s;
     width: 100%;
     opacity: 0;
@@ -321,7 +322,6 @@ ul.sub-menu > li {
 }
 
 .product-section {
-    margin-bottom: 100px;
     margin-top: 100px;
 }
 
@@ -412,4 +412,43 @@ ul.sub-menu > li {
 .discount-text{
     text-decoration: line-through;
     margin-right: 10px;
+}
+
+.banner-section-two{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.banner-two-box{
+    position: relative;
+}
+
+.banner-two-box div.img{
+    text-align: center;
+}
+
+.banner-two-box > .layer{
+    width: 500px;
+    position: absolute;
+    top: 29%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-two-box > .layer h2{
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0 0 10px;
+}
+
+.banner-two-box > .layer p{
+    font-size: 1.6rem;
+    margin: 0 0 15px;
+    letter-spacing: 2px;
+}
+
+.best-seller-section{
+    background-color: #f6f6f6;
+    padding: 100px 0;
 }
