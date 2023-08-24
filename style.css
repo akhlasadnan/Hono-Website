@@ -281,7 +281,7 @@ a.dis-btn {
     gap: 20px;
 }
 
-.banner-two-box::after, .img-box-item::after {
+.banner-3-img::after, .banner-two-box::after, .img-box-item::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -291,15 +291,16 @@ a.dis-btn {
     width: 100%;
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.6);
+    z-index: 999;
 }
 
-.banner-two-box:hover::after, .img-box-item:hover::after {
+.banner-3-img:hover::after, .banner-two-box:hover::after, .img-box-item:hover::after {
     transition: all 1s ease 0s;
     opacity: 0;
     height: 100%;
 }
 
-.banner-two-box::before, .img-box-item::before {
+.banner-3-img::before, .banner-two-box::before, .img-box-item::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -309,9 +310,10 @@ a.dis-btn {
     width: 0%;
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.6);
+    z-index: 999;
 }
 
-.banner-two-box:hover::before, .img-box-item:hover::before {
+.banner-3-img:hover::before, .banner-two-box:hover::before, .img-box-item:hover::before {
     transition: all 1s ease 0s;
     width: 100%;
     opacity: 0;
@@ -451,4 +453,58 @@ a.dis-btn {
 .best-seller-section{
     background-color: #f6f6f6;
     padding: 100px 0;
+}
+
+.banner-three-wrapper{
+    display: flex;
+}
+
+.banner-3-box{
+    flex-basis: 30%;
+}
+
+.banner-3-img{
+    position: relative;
+}
+
+.banner-3-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-3-layer{
+    width: 100%;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.banner-3-layer h2{
+    font-size: 2.4rem;
+    margin: 0 0 9px;
+    font-weight: 500;
+}
+.banner-3-layer p{
+    letter-spacing: 2px;
+}
+
+.banner-3-layer i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f6f6f6;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+
+.banner-3-img:hover .banner-3-layer i{
+    background-color: rgb(177, 147, 97);
 }
