@@ -19,7 +19,10 @@ ul {
 }
 
 header {
+    position: fixed;
     background-color: rgb(254, 245, 239);
+    width:  100%;
+    z-index: 999;
 }
 
 p {
@@ -281,7 +284,7 @@ a.dis-btn {
     gap: 20px;
 }
 
-.banner-3-img::after, .banner-two-box::after, .img-box-item::after {
+.insta-box::after, .banner-3-img::after, .banner-two-box::after, .img-box-item::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -294,13 +297,13 @@ a.dis-btn {
     z-index: 999;
 }
 
-.banner-3-img:hover::after, .banner-two-box:hover::after, .img-box-item:hover::after {
+.insta-box:hover::after, .banner-3-img:hover::after, .banner-two-box:hover::after, .img-box-item:hover::after {
     transition: all 1s ease 0s;
     opacity: 0;
     height: 100%;
 }
 
-.banner-3-img::before, .banner-two-box::before, .img-box-item::before {
+.insta-box::before, .banner-3-img::before, .banner-two-box::before, .img-box-item::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -313,7 +316,7 @@ a.dis-btn {
     z-index: 999;
 }
 
-.banner-3-img:hover::before, .banner-two-box:hover::before, .img-box-item:hover::before {
+.insta-box:hover::before, .banner-3-img:hover::before, .banner-two-box:hover::before, .img-box-item:hover::before {
     transition: all 1s ease 0s;
     width: 100%;
     opacity: 0;
@@ -507,4 +510,295 @@ a.dis-btn {
 
 .banner-3-img:hover .banner-3-layer i{
     background-color: rgb(177, 147, 97);
+}
+
+
+
+
+.blog-section{
+    margin: 100px 0;
+}
+
+.blog-header{
+    margin: 0 0 50px;
+}
+
+.blog-header h2{
+    font-size: 2.6rem;
+    margin: 0 0 7px;
+
+}
+
+.blog-img{
+    overflow: hidden;
+    margin: 0 0 20px;  
+}
+
+.blog-img img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.blog-img img:hover{
+    transform: scale(1.1);
+}
+
+.blog-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-box{
+    flex-basis: 30%;
+}
+
+.blog-content h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.blog-content p{
+    text-align: justify;
+    line-height: 24px;
+    margin: 0 0 30px;
+}
+
+.blog-link a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.blog-link a:hover{
+    color: rgb(177, 147, 97)
+}
+
+.blog-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-link span{
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.insta-section{
+    background-color: #F6F6F6;
+    padding: 100px 0;
+}
+
+.insta-wrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.insta-box{
+    flex-basis: 20%;
+    position: relative;
+}
+
+.insta-img img{
+    display: block;
+    width: 100%;
+}
+
+.insta-btn{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.insta-btn a{
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.insta-btn a:hover{
+    background-color: rgb(177, 147, 97);
+    color: #fff;
+}
+
+
+footer{
+    background-color: #24262B;
+}
+
+.footer-top{
+    padding: 80px 0;
+}
+
+
+.footer-list h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    color: #fff;
+    position: relative;
+}
+
+.f-h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 40px;
+}
+
+.footer-list h2::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgb(177, 147, 97);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.footer-list ul li a{
+    font-size: 1.4rem;
+    color: #777;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.footer-list ul li a:hover{
+    color: #fff;
+    transform: translateX(20px);
+}
+
+.footer-list ul li{
+    padding: 8px 0px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-about p{
+    margin: 0 0 20px;
+}
+
+.footer-list{
+    flex-basis: 21%;
+}
+
+
+
+.footer-center-main-wrapper{
+    padding: 80px 0;
+    border-top: 1px solid #77777757;
+    border-bottom: 1px solid #77777757;
+}
+
+
+.footer-social{
+    flex-basis: 30%;
+}
+
+.footer-social i{
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #2F3239;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.footer-social i:hover{
+    background-color: #fff;
+    color: #2F3239 ;
+}
+
+.footer-center-wrapper{
+    display: flex;
+}
+
+.form-filled{
+    flex-basis: 50%;
+}
+
+.input-mail input{
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.4rem;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.input-mail{
+    position: relative;
+}
+
+.input-mail input:focus{
+    border-color: rgb(177, 147, 97);
+}
+
+.input-mail button{
+    background-color: rgb(177, 147, 97);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.input-mail button:hover{
+    background-color: #fff;
+    color: rgb(177, 147, 97);
+}
+
+.footer-bottom-main-wrapper{
+    padding: 40px 0;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p{
+    color:#777;
+}
+
+
+.copyright p i{
+    color: #ff0000;
+}
+
+
+.copyright p span{
+    color: #fff;
+    font-weight: bold;
 }
